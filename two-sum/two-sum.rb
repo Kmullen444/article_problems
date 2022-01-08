@@ -1,8 +1,3 @@
-# Need to loop through our array checking if the sum of two of the elements
-# are equal to our target
-#
-# Need an arr to return the indices
-
 def two_sum(arr, target)
 
   arr.each_with_index do |num1, idx1|

@@ -1,4 +1,4 @@
-#Interview Question
+# Interview Question
 
 Old-school Roman numerals. In the early days of Roman numerals,
 the Romans didn't bother with any of this new-fangled subtraction
@@ -48,7 +48,7 @@ the code between the two is a little different the concept is the same.
 If you find this helpful or have a different way to solve this problem let me 
 know in the comments
 
-` 
+``` 
 def old_roman_numeral(num)
   refer = { "M" => 1000, "D" => 500, "C" => 100, "L" => 50, "X" => 10, 
             "V" => 5, "I" => 1 }
@@ -64,10 +64,10 @@ def old_roman_numeral(num)
   end
   numeral
 end
-`
+```
 
 
-`
+```
 const oldRomanNumeral = (num) => {
   const numerals = ['M', 'D', 'C', 'L','X', 'V', 'I']
   const numbers  = [1000, 500, 100, 50, 10, 5, 1]
@@ -86,4 +86,5 @@ const oldRomanNumeral = (num) => {
       i++
     }
   return roman
-  }`
+  }
+```

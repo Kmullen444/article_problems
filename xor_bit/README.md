@@ -1,15 +1,15 @@
-#Interview question
+# Interview question
 
 Today's question comes from [Dailycodingproblem.com](https://www.dailycodingproblem.com/). 
 If you don’t know about dailycodingproblems.com I highly recommend checking them out. 
 Everyday they send you a new question that was asked in an actual interview 
 from a big name company, ranging from easy to hard. 
 
-Today's problem comes from Salesforce and reads as follows: Given an array of 
-integers, find the maximum XOR of any two elements.
+Today's problem comes from Salesforce and reads as follows: 
+> Given an array of integers, find the maximum XOR of any two elements.
 
 Now this is an interesting question, not in the way that it can be solved, but 
-how the “Bitwise Exclusive Or (Bitwise XOR)” operation works. This will take 
+how the *“Bitwise Exclusive Or (Bitwise XOR)”* operation works. This will take 
 the bit patterns of two equal lengths, and will result in each position is 1 
 if both are different and 0 if both are the same, and will result in a completely 
 new number. 
@@ -17,12 +17,12 @@ new number.
 In order to better understand what is happening here, let’s take a look at a 
 bit of code. 
 
-`
+```
 25.to_s(2) # "11001
 5.to_s(2) # "101" or "00101"
 
 "11100.to_i(2) #28
-`
+```
 
 In this example we take our integer, in this case 25, and run #to_s with our 
 base being 2, we use base 2 due to the fact that we are working with binary. 
@@ -57,7 +57,7 @@ the greatest outcome.
 
 In both Ruby and JavaScript it is going to look something like this.
 
-`
+```
 def xor_finder(arr)
   amount = nil
 
@@ -73,8 +73,9 @@ def xor_finder(arr)
   end
   amount
 end
-`
-`
+```
+
+```
 const xorFinder = (arr) => {
   let amount; 
 
@@ -92,7 +93,7 @@ const xorFinder = (arr) => {
   })
   return amount
 }
-`
+```
 
 And that’s it! We get back the maximum of two of our elements from our Bitwise 
 XOR operation. 

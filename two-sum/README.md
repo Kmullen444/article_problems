@@ -1,7 +1,7 @@
-#Curated Questions: Day 1
+# Curated Questions: Day 1
 
 
-##Happy New Year!
+## Happy New Year!
 
 With the new year comes a new chance to grow and learn, so this year we are 
 going to start with a post and a list. This list is from a Facebook engineer 
@@ -16,16 +16,16 @@ With that out of the way let’s jump into our first problem and kick off the ne
 
 Our first problem will be **Two Sum** and reads as: 
 
-“Given an array of integers nums and an integer target, return indices of the 
-two numbers such that they add up to target.
+>Given an array of integers nums and an integer target, return indices of the 
+>two numbers such that they add up to target.
 
-You may assume that each input would have exactly one solution, and you may 
-not use the same element twice.
+>You may assume that each input would have exactly one solution, and you may 
+>not use the same element twice.
 
-You can return the answer in any order.”
+>You can return the answer in any order.”
 
 This question also has a follow up: 
-“Can you come up with an algorithm that is less than O(n2) time complexity?”
+>“Can you come up with an algorithm that is less than O(n2) time complexity?”
 
 Let’s start by breaking this down so we get a sense of where to start. To 
 start, we know that we are going to have to return an array of indices, and 
@@ -45,7 +45,7 @@ is true then we will return the indices.
 
 Here is the code for the first part of our problem.
 
-`
+```
 def two_sum(arr,taget)
   
   arr.each_with_index do |num1, idx1|
@@ -55,8 +55,8 @@ def two_sum(arr,taget)
     end
   end
  end
-`
-`
+```
+```
 const twoSum = (arr, target) => {
   for(i = 0; i < arr.length; i++){ 
     for(j = 0; j < arr.length; j++){
@@ -67,7 +67,7 @@ const twoSum = (arr, target) => {
     }
   }
 }
-`
+```
 
 Now onto the follow up question, "Can you come up with an algorithm that is less 
 than O(n2) time complexity?”
@@ -83,7 +83,7 @@ two loops, gives us our O(n2).
 The code below, shows an O(n) answer first in Ruby then in JavaScript is one 
 way to handle this. 
 
-`
+```
 def two_sum(arr, target)
   pairs = {}
   arr.each_with_index do |num, idx|
@@ -93,9 +93,9 @@ def two_sum(arr, target)
     pairs[num] = idx
   end
 end
-`
+```
 
-`
+```
 const two_sum =(arr, target) => {
   let sums = {}
 
@@ -106,7 +106,7 @@ const two_sum =(arr, target) => {
     sums[arr[i]] = i
   }
 }
-`
+```
 
 Here, in our single pass hash methods, we can use Hash/Object with a single 
 loop to give us an O(n). We do this by first creating our variable for the 

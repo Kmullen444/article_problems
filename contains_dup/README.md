@@ -1,4 +1,4 @@
-Curated List Day 3: Contains Duplicates
+# Curated List Day 3: Contains Duplicates
 
 Welcome back to day 3 as we work through the list of interview questions found 
 on [TeamBlind.com](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU). Today we continue our work through the array portion with Contains Duplicates.

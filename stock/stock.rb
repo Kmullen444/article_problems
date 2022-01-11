@@ -1,16 +1,19 @@
-# need to return a buy index, sell index and the profit
-# loop through looking for the buy day ie. the lowest number in the array
-# if buy day is the last number return 0
+def stock_picker(prices)
+  profit = 0
+  min    = prices[0]
 
-# need two loops, condtionial that checks first if i is the lowest of the two 
-# checks if it is the greatest profit of the two given days
-# returns those numbers
-#
-def stock_picker(arr)
-  buy_day = 
-  arr.each_with_index do |buyp, buyi|
-    arr.each_with_index do |sellp, selli|
-      
-    end
+  prices.each do |price|
+    min = price if price < min
+    pos_profit = price - min
+    profit = pos_profit if pos_profit > profit
   end
+  profit
 end
+
+prices = [7,1,5,3,6,4] #5
+
+p stock_picker(prices)
+
+prices = [7,6,4,3,1] #0
+
+p stock_picker(prices)

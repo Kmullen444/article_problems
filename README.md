@@ -11,4 +11,4 @@ that was posted on [TeamBlind.com](https://www.teamblind.com/post/New-Year-Gift-
 
 Be sure to check out the rest of our articles and return soon for another post.
 
-###Thanks for reading
+### Thanks for reading

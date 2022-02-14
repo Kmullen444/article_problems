@@ -1,25 +1,33 @@
-# There is an integer array nums sorted in ascednding order (with distinct values).
-# Prior to being passed to your function, nums is possibly rotated as an unknown pivot index k
-# Given the array nums after the possible rotation and an integer target, return the index of target if it is in
-# nums, or -1 if it is not in nums
-
-# You must write an alogrithm with O(log n) runtime complexity.
-
 def search(nums, target)
-  left  = 0
-  right = nums.length - 1
+  left_idx  = 0
+  right_idx = nums.length - 1
 
-  while left <= right do 
-    mid = right + (left - right) / 2
-    return mid if nums[mid] == target
+  while left_idx <= right_idx do 
+    mid_idx = right_idx + (left_idx - right_idx) / 2
 
-    if nums[mid] >= nums[left]
-      target > nums[mid] || target < nums[left] ? left = mid + 1 : 
-        right = mid - 1
+    right_num = nums[right_idx]
+    mid_num   = nums[mid_idx]
+    left_num  = nums[left_idx]
+
+    p "Mid at top of loop: #{nums[mid_idx]} and idx #{mid_idx}"
+    p "Right at top of loop: #{nums[right_idx]} and idx #{right_idx}"
+    p "Left at top of loop: #{nums[left_idx]} and idx #{left_idx}"
+    puts
+
+    return mid_idx if mid_num == target
+
+    
+    if mid_num >= left_num
+      target > mid_num || target < left_num ? left_idx = mid_idx + 1 : 
+        right_idx = mid_idx - 1
     else
-      target < nums[mid] || target > nums[right] ? right = mid - 1 : 
-        left = mid + 1
+      target < mid_num || target > right_num ? right_idx = mid_idx - 1 : 
+        left_idx = mid_idx + 1
     end
+    p "Right: #{right_num} and idx: #{right_idx}"
+    p "Left: #{left_num} and idx: #{left_idx}"
+    p "Mid: #{mid_num} and idx: #{mid_idx}"
+    puts
   end
   -1
 end

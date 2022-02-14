@@ -3,14 +3,13 @@
 Here you can find the code and its related article.
 
 ## Latest Article: 
-[Find minimum in Rotated Sorted Array](https://github.com/Kmullen444/article_problems/tree/main/min_rotated)
+[Search in Rotated Array](https://github.com/Kmullen444/article_problems/tree/main/search_rotated)
 
-Continuing on our series where we are working through the list of interview
-question that can be found at [TeamBlind.com](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU).
-We take a quick aside to talk about how a binary search works and use that 
-concept to search through a sorted array that has been rotated an n number of times
-for the minimum value. This is definitely a fun one to work through and is our 
-first use of a defined algorithm.
+In our newest article we build on the code from our last post [Find Minimum in Rotated Sorted Array](https://github.com/Kmullen444/article_problems/tree/main/min_rotated)
+where we binary searched through a sorted array that has been rotated **n** number of times.
+This time we are given a sorted array that is rotated **n** number of times and a 
+target number we are looking for. Making this much closer to the traditional 
+binary search. Come build your fondation of knowledge and check out this article.
 
 ## Featured Article:
 

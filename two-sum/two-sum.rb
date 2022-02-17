@@ -1,3 +1,4 @@
+=begin
 def two_sum(arr, target)
 
   arr.each_with_index do |num1, idx1|
@@ -8,10 +9,13 @@ def two_sum(arr, target)
   end
 end
 
+=end
+
 def two_sum(arr, target)
   pairs = {}
 
   arr.each_with_index do |num, idx|
+    p pairs
     if pairs[target - num]
       return pairs[target - num], idx
     end

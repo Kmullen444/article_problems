@@ -15,7 +15,6 @@ def two_sum(arr, target)
   pairs = {}
 
   arr.each_with_index do |num, idx|
-    p pairs
     if pairs[target - num]
       return pairs[target - num], idx
     end

@@ -3,13 +3,13 @@
 Here you can find the code and its related article.
 
 ## Latest Article: 
-[Search in Rotated Array](https://github.com/Kmullen444/article_problems/tree/main/search_rotated)
+[3Sum](https://github.com/Kmullen444/article_problems/tree/main/three_sum)
 
-In our newest article we build on the code from our last post [Find Minimum in Rotated Sorted Array](https://github.com/Kmullen444/article_problems/tree/main/min_rotated)
-where we binary searched through a sorted array that has been rotated **n** number of times.
-This time we are given a sorted array that is rotated **n** number of times and a 
-target number we are looking for. Making this much closer to the traditional 
-binary search. Come build your fondation of knowledge and check out this article.
+In this article we build on the ideas from our [Two Sum II](https://github.com/Kmullen444/article_problems/tree/main/two_sum_two)
+where we use two points added together to try and find a given target number. 
+With 3Sum we are looking for 3 points that when added together equal 0. We are 
+getting to the end of the array section of the list we are working that you can 
+find [here](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU).
 
 ## Featured Article:
 

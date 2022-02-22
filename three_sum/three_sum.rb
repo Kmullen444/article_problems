@@ -2,7 +2,7 @@ def three_sum(nums)
   answer = []
   nums = nums.sort
 
-  (0..nums.length-1).each do |idx|
+  (0..nums.length-3).each do |idx|
     next if idx > 0 && nums[idx] == nums[idx - 1]
     middle = idx + 1
     end_pos = nums.length-1

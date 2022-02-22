@@ -2,8 +2,8 @@ function twoSum(nums) {
   let answer = []
   nums = nums.sort()
 
-  for(i = 0; i < nums.length-2; i++){
-    if (nums[i] === nums[i - 1] &&  i > 0) { continue; }
+  for(i = 0; i < nums.length-3; i++){
+    if (nums[i] === nums[i - 1] &&  i > 0)  continue; 
     let mid = i + 1;
     let ep  = nums.length-1;
 

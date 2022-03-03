@@ -3,13 +3,15 @@
 Here you can find the code and its related article.
 
 ## Latest Article: 
-[3Sum](https://github.com/Kmullen444/article_problems/tree/main/three_sum)
 
-In this article we build on the ideas from our [Two Sum II](https://github.com/Kmullen444/article_problems/tree/main/two_sum_two)
-where we use two points added together to try and find a given target number. 
-With 3Sum we are looking for 3 points that when added together equal 0. We are 
-getting to the end of the array section of the list we are working that you can 
-find [here](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU).
+[Container with most water](https://github.com/Kmullen444/article_problems/tree/main/most_water)
+
+In this article we finish up the array portion of our list that you can find [here](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU).
+We find ourselves working with another take on a problem the we can use our 
+two point concept to solve. This time we are trying to make a container from a 
+given array of numbers that will hold the most water. Here we can see another 
+example of why it is so important to build a solid foundation of knowledge as 
+we continue working through this list.
 
 ## Featured Article:
 

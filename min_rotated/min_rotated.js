@@ -1,4 +1,4 @@
-const findMin = (nums) => {
+const findMin = nums => {
   let left  = 0; // set a var to 0
   let right = nums.length - 1; // set a var to length of the array - 1
 
